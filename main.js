@@ -92,23 +92,22 @@ const portFo = () => {
     description.textContent = work.description;
 
     const stackCont = document.createElement('ul');
-    stackCont.style.listStyleType = 'none'; 
+    stackCont.style.listStyleType = 'none';
     stackCont.classList.add('stacklist');
     work.stack.forEach((stack) => {
       const stackItem = document.createElement('li');
       stackItem.textContent = stack;
-      stackCont.appendChild(stackItem);  
-      stackCont.style.display = 'flex';    
+      stackCont.appendChild(stackItem);
+      stackCont.style.display = 'flex';
     });
-    
 
     const tech = document.createElement('ul');
-    tech.style.listStyleType = 'none'; 
+    tech.style.listStyleType = 'none';
     work.technologies.forEach((technology) => {
       const techItem = document.createElement('li');
       techItem.textContent = technology;
       tech.appendChild(techItem);
-      tech.style.display = 'flex'; 
+      tech.style.display = 'flex';
     });
 
     detailsCont.appendChild(name);
@@ -130,7 +129,7 @@ const portFo = () => {
     seeSource.style.width = '100px';
     seeSource.addEventListener('click', () => {
       window.open(work.github);
-    }); 
+    });
 
     const seeLive = document.createElement('button');
     seeLive.textContent = 'See live';
@@ -143,11 +142,9 @@ const portFo = () => {
     btns.appendChild(seeSource);
     btns.appendChild(seeLive);
 
-    detailsCont.appendChild(btns );
+    detailsCont.appendChild(btns);
 
     portfolio.appendChild(portfolioCont);
-
-    
   });
 };
 
