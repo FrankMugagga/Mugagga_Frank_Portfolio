@@ -1,7 +1,7 @@
-import Typed from './typed.js';
+//import Typed from './typed.js';
 
 const type = new Typed('.text', {
-  strings: ['Frontend Developer', 'Backend Developer', 'Full Stack Developer', 'Software Developer'],
+  strings: ['Frontend Develope', 'Backend Developer', 'Full Stack Developer', 'Software Developer'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
@@ -199,6 +199,13 @@ submit.addEventListener('click', (event) => {
     msg.style.background = 'red';
     msg.innerHTML = 'Please write, your email in small letters';
     form.reset();
+  }
+  else if(email.value === "" || form.elements[0].value === "" || form.elements[2].value === "") {
+    msg.style.color = '#fff';
+    msg.style.background = 'red';
+    msg.innerHTML = 'Please complete filling the form before submission';
+    form.reset();
+    
   } else {
     msg.innerHTML = 'Thank you for email, I will get back to you ASAP';
     msg.style.background = 'black';
