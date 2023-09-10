@@ -21,8 +21,7 @@ html {
 .home_page {
   width: 100%;
   height: 100vh;
-  background: rgb(198, 224, 228);
-  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
 }
 
 .header {
@@ -38,10 +37,10 @@ html {
 }
 
 .logo {
-  font-size: 25px;
+  font-size: 21px;
   text-decoration: none;
   font-weight: 600;
-  color: rgb(92, 199, 218);
+  color: white;
   cursor: default;
   opacity: 0;
   animation: slideRight 1s ease forwards;
@@ -108,6 +107,7 @@ html {
   border-right-width: 10px;
   border-right-style: dashed;
   border-radius: 20px;
+  padding: 20px;
 }
 
 .home-content h3 {
@@ -116,6 +116,7 @@ html {
   opacity: 0;
   animation: slideBottom 1s ease forwards;
   animation-delay: 0.7s;
+  
 }
 
 .home-content h1 {
@@ -126,6 +127,17 @@ html {
   animation-delay: 1s;
 }
 
+.text1 {
+  background: black;
+  color: white;
+}
+
+.text {
+  color: white;
+  background: black;
+  padding: 5px;
+}
+
 .home-content p {
   font-size: 29px;
   line-height: 35px;
@@ -134,14 +146,11 @@ html {
   animation-delay: 1s;
 }
 
-.home-content h3 span {
-  color: #0ef;
-}
-
 .home-sci a:hover {
-  background: #0ef;
-  color: #081b29;
-  box-shadow: 0 0 20px #0ef;
+  border: 2px solid white;
+  background: black;
+  color: white;
+  box-shadow: 0 0 30px black;
 }
 
 #portfolio {
@@ -233,17 +242,25 @@ html {
 
 #contact {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  justify-content: space-around;
   padding: 0 10%;
   border-radius: 30px;
+  background: rgba(60, 54, 54, 0.089);
+  
 }
 
 .contact_heading {
-  font-size: 60px;
+  font-size: 26px;
+}
+
+.cont_container {
+  display: flex;
+  width: 90%;
 }
 
 .contact_paragraph {
@@ -252,10 +269,17 @@ html {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 90%;
-  height: 40%;
-  font-size: 25px;
-  line-height: 35px;
+  width: 50vw;
+  height: 50vh;
+  font-size: 18px;
+  line-height: 35px; 
+  margin-left: 10px;
+}
+
+.contact_paragraph:hover {  
+  color: white;
+  background: black;
+
 }
 
 form {
@@ -263,25 +287,74 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 50vw;
+  height: 50vh;
+  background: white;
+  padding: 10px;
+      animation: formFadeIn 1s ease-in-out;
+}
+
+form:hover {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+@keyframes formFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+}
+
+.text_area,
+.input {
   width: 90%;
+  font-size: 18px;
+  padding: 2px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid black;
+  border-bottom-style:dashed;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-width: 3px;
+  padding: 2px 30px 0 5px;
+  margin-bottom: 10px;
 }
 
 .input {
-  width: 75%;
-  height: 40px;
-  padding: 2px;
+  height: 50px;
 }
 
 .text_area {
-  width: 75%;
   height: 170px;
 }
 
+.text_area:hover,
+.input:hover {
+  box-shadow: 10px 10px 36px rgb(3, 8, 1);
+  background: rgba(60, 54, 54, 0.089);
+  outline-style: dashed;
+  outline-color: white;
+}
+
+
+
 #contact_btn {
-  font-size: 35px;
-  width: 120px;
-  height: 50px;
+  font-size: 21px;
+  width: 100px;
+  height: 40px;
   border-radius: 10px;
+}
+
+#contact_btn:hover {
+  background: black;
+  color: white;
 }
 
 @keyframes slideRight {
@@ -354,6 +427,12 @@ form {
     height: 25vh;
   }
 
+  .logo {
+    background: black;
+    color: white;
+    height: 30px;
+  }
+
   .hambarger.open {
     background: rgb(10, 10, 10);
   }
@@ -377,7 +456,7 @@ form {
   .icon span {
     width: 100%;
     height: 4px;
-    background: #6070ff;
+    background: black;
     transition: all 0.3s ease-in-out;
   }
 
@@ -398,16 +477,16 @@ form {
   }
 
   .menu_links a {
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
-    color: #6070ff;
+    color: white;
     text-align: center;
     width: 76vw;
   }
 
   .menu_links a:hover {
-    color: white;
-    background: #6070ff;
+    color: black;
+    background: white;
   }
 
   .menu_links.open {
@@ -416,7 +495,7 @@ form {
 
   .icon.open span:first-child {
     transform: rotate(45deg) translateY(17px);
-    background: red;
+    background: white;
   }
 
   .icon.open span:nth-child(2) {
@@ -425,7 +504,7 @@ form {
 
   .icon.open span:last-child {
     transform: rotate(-45deg) translateY(-20px);
-    background: red;
+    background: white;
   }
 
   .main {
@@ -441,15 +520,15 @@ form {
   }
 
   .home-content h3 {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .home-content h1 {
-    font-size: 29px;
+    font-size: 26px;
   }
 
   .home-content p {
-    font-size: 19px;
+    font-size: 16px;
   }
 
   #about {
@@ -470,37 +549,29 @@ form {
   }
 
   #contact {
-    padding: 5%;
+    width: 90%;
+    height: 100vh;
+    padding: 0;
   }
 
-  .contact_heading {
-    font-size: 30px;
+  .cont_container {
+    flex-direction: column;
   }
 
+  form,
   .contact_paragraph {
-    font-size: 18px;
-    width: 100%;
+    width: 100%; 
+    height: 30vh;   
   }
 
   form {
-    width: 100%;
+    height: 50vh;
   }
 
+  .text_area,
   .input {
     width: 100%;
-    height: 40px;
-    padding: 2px;
   }
 
-  .text_area {
-    width: 100%;
-    height: 150px;
-  }
-
-  #contact_btn {
-    width: 80px;
-    height: 30px;
-    border-radius: 10px;
-    font-size: 18px;
-  }
+ 
 }
