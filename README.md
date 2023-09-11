@@ -39,7 +39,7 @@
 
 Describe your project in 1 or 2 sentences.
 
-**[Mugagga Frank Portfolio]** is a mobile version portfolio for a software developer Frank Mugagga 
+**[Mugagga Frank Portfolio]** is a responsive portfolio for a software developer Frank Mugagga 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -52,7 +52,7 @@ Describe your project in 1 or 2 sentences.
 Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
-  <summary>Client</summary>
+  <summary>Frontend</summary>
   <ul>
     <li>HTML, CSS, JAVASCRIPT</li>
   </ul>
@@ -61,10 +61,10 @@ Describe the tech stack and include only the relevant sections that apply to you
 ### Key Features <a name="key-features"></a>
 
 Describe between 1-3 key features of the application.
+- **[Project portfolio]**
+- **[About ]**
+- **[Contact me]**
 
-- **[created_Frank_Mugagga_portfolio]**
-- **[project]**
-- **[deployment]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -74,10 +74,11 @@ Describe between 1-3 key features of the application.
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link]( https://frankmugagga.github.io/Mugagga_Frank_Portfolio/)
+- [Live Demo Link]()                  
 
 
-- [video Link](https://www.loom.com/share/1f2943ca12ee4b4e97db22f208077ecb)
+
+- [video Link]()
 
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -121,7 +122,7 @@ Mention all of the collaborators of this project.
 
 - GitHub: [@githubhandle](https://www.github.com/FrankMugagga)
 - Twitter: [@twitterhandle](https://www.twitter.com/@mugagga_frank)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/frank-mugagga-17658225a)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/frank-mugagga)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -132,7 +133,7 @@ Mention all of the collaborators of this project.
 
 Describe 1 - 3 features you will add to the project.
 
-- [ ] **[created_Frank_Mugagga_portfolio]**
+- [ ] **[API]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -143,7 +144,7 @@ Describe 1 - 3 features you will add to the project.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/FrankMugagga/Mugagga_Frank_Portfolio/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,7 +154,7 @@ Feel free to check the [issues page](../../issues/).
 
 Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project kindly get in touch, like, and share
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -163,7 +164,7 @@ If you like this project...
 
  Give credit to everyone who inspired your codebase.
 
-I would like to thank Microverse, my coding partners...
+I would like to thank Microverse for the support on study materials
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,11 +176,11 @@ I would like to thank Microverse, my coding partners...
 
 - **[Question_1]**
 
-  - [Answer_1]
+  - [How can i get in tocuh?]
 
 - **[Question_2]**
 
-  - [Answer_2]
+  - [What programming language are most profficent]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
