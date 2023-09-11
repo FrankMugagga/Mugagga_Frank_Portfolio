@@ -88,7 +88,7 @@ const portFo = () => {
     const name = document.createElement('h2');
     name.textContent = work.name;
 
-    const description = document.createElement('div');
+    const description = document.createElement('p');
     description.textContent = work.description;
 
     const stackCont = document.createElement('ul');
@@ -105,6 +105,7 @@ const portFo = () => {
     tech.style.listStyleType = 'none';
     work.technologies.forEach((technology) => {
       const techItem = document.createElement('li');
+      techItem.classList.add('tech');
       techItem.textContent = technology;
       tech.appendChild(techItem);
       tech.style.display = 'flex';

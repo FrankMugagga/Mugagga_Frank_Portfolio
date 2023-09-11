@@ -165,21 +165,37 @@ html {
 .portfolioCont {
   display: flex;
   width: 100%;
-  margin: 20px;
+  margin: 10px;
   align-items: center;
   justify-content: center;
-  background: green;
+  border-radius: 10px;
+  background: black;
+  color: white;
+
+  border: 2px solid white;
+  border-style:dotted;
+  border-top-width: 5px;
+}
+
+.portfolioCont:hover {
+  color: black;
+  background: white;
+  border: 2px solid black;
+  border-style:dotted;
+  border-top-width: 5px;
 }
 
 .imageCont {
-  width: 44.5vw;
-  height: 50vh;
-  padding: 2%;
+  width: 44.3vw;
+  height: 45vh;
+  border-radius: 10px;
+  margin: 0 5px 0 5px;
 }
 
 .detailsCont {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 50%;
   height: 50vh;
   padding: 2%;
@@ -197,21 +213,104 @@ html {
   text-decoration: none;
 }
 
+.detailsCont h2 {
+  font-size: 21px;
+  margin-bottom: 4%;
+}
+
+.detailsCont ul {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  width: 50%;
+  height: 40px;
+  margin-bottom: 4%;
+}
+
+.detailsCont p {
+  height: 10%;
+  margin-bottom: 4%;
+}
+
+.tech {
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  border: 2px solid;
+}
+
+.detailsCont button {
+  height: 40px;
+  font-size: 18px;
+  border-radius: 10px;
+  margin-right: 10px;
+  background:  white;
+}
+
+.detailsCont button:hover {
+  background: black;
+  color: white;
+}
+
 #about {
   display: flex;
   width: 90%;
   margin-bottom: 20px;
-  background: rgb(182, 194, 165);
 }
 
 .aboutCont {
   width: 50%;
   padding: 2%;
+  box-shadow: 0 0 30px black;
+}
+
+.aboutCont p:hover {
+  border: none;
+  border-right: 2px solid black;
+  border-bottom: 2px solid white;
+  border-bottom-right-radius: 50px;
+  border-bottom-style: dotted;
+  border-bottom-width: 5px;
+  background: rgba(60, 54, 54, 0.089);
+  padding: 10px;
+  box-shadow: 0 0 30px black;
+}
+
+.connect {
+  border-radius: 10px;
+  border-style: dashed;
+  border-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5px;
+  height: 80px;
+}
+
+.connect legend {
+  background: black;
+  color: white;
 }
 
 .getResume {
-  width: 120px;
-  height: 40px;
+  background: none;
+  border: none;
+}
+
+.getResume a {
+  font-size: 18px;
+  padding: 10px;
+  text-decoration: none;
+  background: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.getResume a:hover {
+  border: 2px solid black;
+  background: white;
+  color: black;
+  box-shadow: 0 0 16px;
 }
 
 .technical {
@@ -225,15 +324,22 @@ html {
 #frame_content,
 #lang_item {
   display: none;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 160px;  
 }
 
 .col {
   font-size: 30px;
-  color: rgba(0, 38, 128, 0.834);
+  color: black;
   display: block;
   margin-bottom: 5px;
+}
+
+.col:hover {
+  background: black;
+  color: white;
+  border-bottom: 2px solid white;
+  box-shadow: 0 0 30px black;
+
 }
 
 .tech_span {
@@ -531,6 +637,10 @@ form:hover {
     font-size: 16px;
   }
 
+  .detailsCont ul {
+    width: 100%;
+  }
+ 
   #about {
     flex-direction: column;
   }
@@ -543,9 +653,12 @@ form:hover {
     flex-direction: column;
   }
 
-  .detailsCont,
-  .imageCont {
+  .detailsCont{
     width: 100%;
+  }
+
+  .imageCont {
+    width: 97%;
   }
 
   #contact {
@@ -556,15 +669,18 @@ form:hover {
 
   .cont_container {
     flex-direction: column;
+    width: 100%;
   }
 
   form,
   .contact_paragraph {
     width: 100%; 
-    height: 30vh;   
+    height: 30vh; 
+    margin-left: 0;  
   }
 
   form {
+    width: 100%;
     height: 50vh;
   }
 
