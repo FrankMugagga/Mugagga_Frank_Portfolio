@@ -1,12 +1,14 @@
-//import Typed from './typed.js';
+/* eslint-disable no-undef */
 
 const type = new Typed('.text', {
-  strings: ['Frontend Develope', 'Backend Developer', 'Full Stack Developer', 'Software Developer'],
+  strings: ['Frontend Developer', 'Backend Developer', 'Full Stack Developer', 'Software Developer'],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
   loop: true,
 });
+
+/* eslint-enable no-undef */
 // eslint-disable-next-line no-console
 console.log(type);
 
@@ -97,7 +99,7 @@ const data = [
       'HTML',
       'React/Redux',
       'CSS',
-      'API'
+      'API',
     ],
     live: 'https://world-population-git-population-frankmugagga.vercel.app/',
     github: 'https://github.com/FrankMugagga/World-Population',
@@ -113,7 +115,7 @@ const data = [
       'React',
       'Redux',
       'CSS',
-      'API'
+      'API',
     ],
     live: 'https://space-travelers-hub-five.vercel.app/',
     github: 'https://github.com/FrankMugagga/Space-Travelers-Hub',
@@ -253,13 +255,11 @@ submit.addEventListener('click', (event) => {
     msg.style.background = 'red';
     msg.innerHTML = 'Please write, your email in small letters';
     form.reset();
-  }
-  else if(email.value === "" || form.elements[0].value === "" || form.elements[2].value === "") {
+  } else if (email.value === '' || form.elements[0].value === '' || form.elements[2].value === '') {
     msg.style.color = '#fff';
     msg.style.background = 'red';
     msg.innerHTML = 'Please complete filling the form before submission';
     form.reset();
-    
   } else {
     msg.innerHTML = 'Thank you for email, I will get back to you ASAP';
     msg.style.background = 'black';
